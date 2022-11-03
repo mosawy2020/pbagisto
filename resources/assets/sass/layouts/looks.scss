@@ -1,0 +1,206 @@
+.looks-page-wrapper {
+    .page-banner {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-text {
+            position: absolute;
+            bottom: 16%;
+            right: 13%;
+
+            h1 {
+                font-size: 7rem;
+            }
+        }
+    }
+
+    .looks-item {
+        text-align: center;
+        position: relative;
+
+        .desc {
+            background-color: rgb($light-gray);
+            padding: 2.5rem 0;
+            min-height: 18rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            position: relative;
+            background-position: 50% 11rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("#{$theme-url}images/static/about_bg.svg");
+
+            h2 {
+                color: rgb($primary);
+                font-weight: bold;
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .content {
+                color: rgb($white);
+                font-size: 1rem;
+                line-height: 1.7;
+                max-width: 600px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            &:after {
+                content: "";
+                height: 12px;
+                width: 7rem;
+                background-color: rgb($secondary);
+                bottom: -6px;
+                right: 0;
+                left: 0;
+                margin-right: auto;
+                margin-left: auto;
+                position: absolute;
+            }
+        }
+
+        .img {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .theme-btn {
+            position: absolute;
+            bottom: 1rem;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: fit-content;
+            padding: 1rem 2rem;
+            min-width: 10rem;
+        }
+    }
+
+    .load-more.theme-btn {
+        display: block;
+        max-width: fit-content;
+        margin: 2rem auto;
+        background-color: transparent !important;
+        color: rgb($light-gray) !important;
+        border-color: rgb($light-gray);
+
+        &:hover {
+            background-color: rgb($primary) !important;
+            color: rgb($white) !important;
+            border-color: rgb($white);
+        }
+    }
+}
+
+.single-look-page-wrapper {
+    .breadcrumb-wrapper {
+        .breadcrumb {
+            border-bottom: 1px solid rgb($light-gray, 0.5);
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+        font-weight: normal;
+        color: rgb($primary);
+    }
+
+    .brands {
+
+        h3 {
+            color: rgb($light-gray);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .brands-carousel {
+            margin: 2rem 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgb($light-gray, 0.5);
+            max-height: 135px;
+            overflow: hidden;
+            
+
+            .brand-item {
+                width: 100%;
+                padding: 0 1rem;
+
+                img {
+                    width: 100%;
+                    height: 6rem;
+                    object-fit: contain;
+                }
+            }
+        }
+        .shimmer-wrapper{
+            .comment{
+                display: none;
+            }
+        }
+    }
+
+    .single-look-gallery {
+        >.grid{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery-item {
+            position: relative;
+            display: block;
+            img {
+                width: 100%;
+            }          
+            &:nth-child(3n+4),
+            &:first-child {
+                min-width: 100%;
+                &:after{
+                    content: "";
+                    height: 12px;
+                    width: 7rem;
+                    background-color: rgb($secondary);
+                    bottom: -6px;
+                    right: 0;
+                    left: 0;
+                    margin-right: auto;
+                    margin-left: auto;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+
+            &:nth-child(3n+2),
+            &:nth-child(3n+3) {
+                width: 50%;
+                
+            }
+            &:nth-child(3n+2),{
+                &:after{
+                    content: "";
+                    height: 7rem ;
+                    width: 12px;
+                    background-color: rgb($primary);
+                    bottom: 0;
+                    left: -6px;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+.lg-container {
+    direction: ltr;
+    position: relative;
+    z-index: 9999;
+}

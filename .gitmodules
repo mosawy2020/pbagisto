@@ -1,0 +1,4 @@
+
+[submodule "ImageGallery"]
+	path = packages/Webkul/ImageGallery
+	url = https://github.com/bagisto/bagisto-image-gallery

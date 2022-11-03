@@ -1,0 +1,27 @@
+.social-login-links .icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  display: inline-block;
+  background-size: cover;
+}
+.social-login-links .icon.icon-facebook-login {
+  background-image: url("../images/facebook-login.svg");
+}
+.social-login-links .icon.icon-twitter-login {
+  background-image: url("../images/twitter-login.svg");
+}
+.social-login-links .icon.icon-google-login {
+  background-image: url("../images/google-login.svg");
+}
+.social-login-links .icon.icon-linkedin-login {
+  background-image: url("../images/linkedin-login.svg");
+}
+.social-login-links .icon.icon-github-login {
+  background-image: url("../images/github-login.svg");
+}
+.social-login-links .icon.icon-instagram-login {
+  background-image: url("../images/instagram-login.svg");
+}/*# sourceMappingURL=icons.css.map */

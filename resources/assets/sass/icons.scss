@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'pura';
+    src:  url('#{$theme-url}fonts/font-pura/pura.eot?3djyw1');
+    src:  url('#{$theme-url}fonts/font-pura/pura.eot?3djyw1#iefix') format('embedded-opentype'),
+      url('#{$theme-url}fonts/font-pura/pura.ttf?3djyw1') format('truetype'),
+      url('#{$theme-url}fonts/font-pura/pura.woff?3djyw1') format('woff'),
+      url('#{$theme-url}fonts/font-pura/pura.svg?3djyw1#pura') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'pura' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-cart:before {
+    content: "\e900";
+    color: #8fa0a3;
+  }
+  .icon-contact:before {
+    content: "\e901";
+    color: #fff;
+  }
+  .icon-fav:before {
+    content: "\e902";
+    color: #e7004c;
+  }
+  .icon-lang:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .icon-search:before {
+    content: "\e904";
+    color: #8fa0a3;
+  }
+  .icon-user:before {
+    content: "\e905";
+    color: #8fa0a3;
+  }
+  .icon-share:before {
+    content: "\e907";
+    color: #8ca1a3;
+  }
+  .icon-fav_empty:before {
+    content: "\e906";
+  }
+  .icon-add_to_cart_card:before {
+    content: "\e908";
+    color: #fff;
+  }
+  .icon-arrow-right:before {
+    content: "\e909";
+  }
+  .icon-arrow-left:before {
+    content: "\e90a";
+  }
+  .icon-bold-chevron-down:before {
+    content: "\e90b";
+    color: #8ca1a3;
+  }
+  .icon-outline-chevron-up:before {
+    content: "\e90c";
+  }
+  .icon-bell:before {
+    content: "\e90d";
+  }
+

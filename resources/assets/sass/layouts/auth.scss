@@ -1,0 +1,445 @@
+.auth-content.form-container {
+    margin-bottom: 2rem;
+}
+
+.auth-page-wrapper {
+    background: rgb($white);
+    border-radius: 3rem;
+    overflow: hidden;
+
+    .with-bg-column {
+        background-color: rgb($primary);
+        display: flex;
+        align-items: center;
+
+        .btn-new-customer {
+            float: unset !important;
+        }
+
+        .heading {
+            margin: 0 !important;
+            text-align: center;
+
+            .btn-new-customer {
+
+                max-width: 11rem;
+                display: block;
+                margin: auto;
+
+                button {
+                    width: 100%;
+                    color: rgb($primary) !important;
+                }
+            }
+
+        }
+
+        .new-customer-wrapper {
+            padding: 1rem;
+
+
+            h2 {
+                color: rgb($white);
+                display: block;
+                float: unset !important;
+                text-align: center;
+            }
+
+            .logo {
+                margin: auto;
+                display: block;
+            }
+
+            .new-cutomer-text {
+                color: rgb($white);
+                font-size: 1rem;
+                ;
+            }
+        }
+    }
+
+    .no-bg-column {
+        padding-top: 4rem;
+
+        .heading {
+            margin: 0 !important;
+            padding: 1rem 2rem 0 1rem;
+
+            h1 {
+                font-size: 1.8rem;
+                float: none !important;
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+                margin-bottom: 2rem;
+
+            }
+        }
+
+        .body {
+            border: 0;
+            padding: 0rem 2rem 1rem 2rem;
+
+            .form-group,
+            .control-group {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+
+                label {
+                    width: 7rem;
+                    color: rgb($light-gray);
+                }
+
+                >input:not([type='checkbox']) {
+                    width: calc(100% - 7.5rem);
+                    border-radius: 0.6rem;
+                }
+
+                .show-pass {
+                    position: absolute;
+                    left: 10px;
+
+                    >label {
+                        font-size: 0;
+                        speak: none;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        font-family: Webkul Rango !important;
+                        font-style: normal;
+                        font-variant: normal;
+                        font-weight: 400;
+                        line-height: 1;
+                        text-transform: none;
+
+                        &:before {
+                            content: "\E92E";
+                            font-size: 1.2rem;
+                        }
+
+
+                        // .rango-eye-visible:before {
+                        //     content: "\E92F";
+                        // }
+                    }
+
+                    input[type=checkbox] {
+                        display: none;
+                    }
+
+                    label {
+                        width: 2rem;
+                        height: 2.2rem;
+                        text-align: center;
+                        line-height: 2;
+
+                    }
+
+                    input[type=checkbox]:checked+label {
+                        &:before {
+                            content: "\E92F";
+
+                        }
+                    }
+                }
+
+
+            }
+
+            .subscribe-checkbox {
+                margin-bottom: 1rem;
+                color: rgb($primary);
+            }
+
+            .forget-password {
+                margin-right: auto;
+                margin-top: 0.5rem;
+                color: rgb($primary);
+            }
+
+            .social-login-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .control-group {
+                    width: fit-content;
+                    margin: 0 0.5rem;
+
+                    .link {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 1rem;
+                        text-align: center;
+                        padding: 11px 0;
+                        min-width: unset;
+
+                        .icon {
+                            margin: 0;
+                        }
+
+                        .social-text {
+                            display: none;
+
+                        }
+                    }
+                }
+            }
+
+            .social-link-seperator {
+                margin: 20px 0 15px;
+
+                span {
+                    text-transform: uppercase;
+                    left: calc(50% - 2rem);
+                }
+            }
+        }
+    }
+}
+
+.account-content {
+    padding: 3rem 0;
+
+    .sidebar {
+        border: 0 !important;
+
+        .customer-sidebar {
+            background-color: rgb($white);
+            border-radius: 1rem;
+        }
+
+        .customer-sidebar {
+            .navigation {
+                li {
+
+                    &:hover,
+                    &.active {
+                        color: rgb($primary);
+                        background-color: rgba($light-gray, 0.2);
+                    }
+                }
+            }
+        }
+
+        .customer-name {
+            background-color: rgb($primary);
+        }
+
+    }
+
+    .account-layout {
+        .account-main-content {
+            background-color: rgb($white);
+            border-radius: 1rem;
+            padding: 2rem;
+
+            .account-head {
+                margin-bottom: 2rem !important;
+            }
+
+            .btn-to-end {
+                display: block;
+                width: fit-content;
+                margin-left: auto;
+            }
+
+            .grid-dropdown-header {
+                border-radius: 1rem;
+                min-height: 2.5rem;
+            }
+
+            .grid-container {
+                .grid-top {
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    background-color: rgba($light-gray, 0.2);
+                }
+            }
+
+            .table table thead th,
+            .table table tr td {
+                text-align: start;
+            }
+
+            .filter-advance {
+                margin: 1rem 0;
+            }
+
+            .table {}
+
+            .address-holder {
+                .card {
+                    border-radius: 1rem;
+
+                    .card-body {
+                        text-align: end;
+
+                        .card-title,
+                        ul {
+                            text-align: start;
+                        }
+
+                        >a {
+                            color: rgb($secondary);
+                        }
+                    }
+                }
+            }
+
+            span.help-note {
+                font-size: 0.7rem;
+                color: rgb($light-gray);
+            }
+
+            .sale-container {
+                .tabs-content {
+                    .sale-section {
+                        .section-content {
+                            .totals {
+                                width: 50%;
+                                background: #f4f5f5;
+                                border-radius: 1rem;
+                                padding: 1rem;
+
+                                .sale-summary {
+                                    width: 100%;
+                                }
+
+                                table {
+                                    tr {
+                                        td {
+                                            padding: 0.3rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tabs {
+                    ul {
+                        li.active {
+                            border-color: rgb($primary);
+                        }
+                    }
+                }
+
+                .order-box-container {
+                    .box {
+                        .box-title {
+                            background: #f4f5f5;
+                            border-radius: 0.5rem;
+                            padding: 1rem 0.7rem;
+                        }
+
+                        .box-content {
+                            padding: 0.7rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .account-table-content {
+
+            input,
+            select,
+            textarea {
+                border-radius: 1rem;
+                min-height: 2.5rem;
+            }
+        }
+    }
+
+    .account-layout.right {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .theme-btn.light {
+        color: rgb($primary) !important;
+        border-color: rgb($primary) !important;
+    }
+
+}
+
+.auth-page-wrapper.custom-overflow {
+    overflow: initial;
+    margin-top: 8rem;
+}
+
+
+.forgot-pass-svg {
+    margin-top: -12rem;
+    width: 15rem;
+    height: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    border-radius: 100%;
+
+    svg {
+        width: 100%;
+        height: 100%;
+
+        .st0 {
+            fill: rgb($white);
+        }
+
+        .st1 {
+            fill: rgb($dark-primary);
+        }
+
+        .st2 {
+            fill: rgb($secondary);
+        }
+
+        .st3 {
+            fill: rgb($secondary);
+        }
+    }
+}
+
+.cart-empty-wrapper {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+    svg {
+        height: 18rem;
+        width: 18rem;
+        .st0 {
+            fill: #FEFEFE;
+        }
+
+        .st1 {
+            fill: rgb($secondary);
+        }
+
+        .st2 {
+            fill: rgb($danger);
+        }
+
+        .st3 {
+            fill: #C7C5C1;
+        }
+
+        .st4 {
+            fill: rgb($dark-primary);
+        }
+
+        .st5 {
+            fill: #656565;
+        }
+    }
+    .empty-cart-message{
+        font-size: 1.5rem!important;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color:rgb($light-gray);
+    }
+
+}

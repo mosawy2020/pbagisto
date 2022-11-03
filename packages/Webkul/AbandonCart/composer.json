@@ -1,0 +1,29 @@
+{
+    "name": "bagisto/laravel-abandoncart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rahul Shukla",
+            "email": "rahulshukla.symfony517@webkul.com"
+        }
+    ],
+    "require": {
+        "bagisto/laravel-user": "dev-master",
+        "bagisto/laravel-ui": "dev-master",
+        "bagisto/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\Admin\\Providers\\AbandonCartServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,31 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// // Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+//main
+@import "main";
+
+//Layouts
+@import "layouts/home";
+@import "layouts/category";
+@import "layouts/product";
+@import "layouts/pages";
+@import "layouts/looks";
+@import "layouts/auth";
+@import "layouts/cart";
+@import "layouts/coming-soon";
+
+
+//Icons
+@import "icons";
+
+//Direction
+@import "direction";
+
+//Rtl
+@import "responsive";
+

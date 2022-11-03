@@ -1,0 +1,1 @@
+{{-- <link href="{{ asset('themes/pura_theme/assets/css/suggestion.css') }}" rel="stylesheet"> --}}

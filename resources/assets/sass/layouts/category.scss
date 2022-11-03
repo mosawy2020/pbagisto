@@ -1,0 +1,175 @@
+.category-container {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0;
+    min-height: unset;
+}
+
+.category-page-wrapper {
+    .product-card-new.main-product-card {
+        background-color: transparent;
+        padding: 0;
+
+        .product-actions {
+            >div:not(.share-btn) {
+                order: 1;
+            }
+            direction: inherit;
+        }
+
+        .add-to-cart-btn {
+            order: 2;
+        }
+
+        .wishlist-icon {
+            order: 1;
+        }
+
+        .share-btn {
+            order: 2;
+            z-index:1;
+        }
+    }
+
+    .category-container {
+        .filters-container {
+            background-color: transparent;
+            margin: 0;
+            width: 100%;
+            padding: 10px 0 5px 0;
+            text-align: end;
+            border-bottom: 1px solid rgb($light-gray, 0.4);
+
+            .toolbar-wrapper {
+                >.sorter {
+                    >select {
+                        background-color: transparent;
+                        border: 0;
+                        font-weight: bold;
+                        color: rgb($light-gray);
+                    }
+                }
+            }
+        }
+        .category-block{
+            .shimmer-product-image {
+                height: 350px;
+            }
+        }
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-categories-wrapper {
+        padding-top: 3rem;
+
+        .category-card {
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+            .card-top {
+                background-color: rgb($primary);
+                display: block;
+                width: 80%;
+                margin: 2rem auto;
+                position: relative;
+                padding-top: 80%;
+                border-radius: 100%;
+
+                .card-top-inner {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    img {
+                        width: 8rem;
+                        height: 8rem;
+                        object-fit: contain;
+                    }
+
+                    .title {
+                        color: rgb($white);
+                        margin-top: 1rem;
+                        font-weight: bold;
+                        padding: 0 1rem;
+
+                    }
+
+                }
+
+                svg {
+                    position: absolute;
+                    width: calc(100% + 2.5rem);
+                    height: calc(44% + 2.5rem);
+                    right: -1.25rem;
+                    bottom: -1.25rem;
+
+                    .half-circle-path {
+                        fill: none;
+                        stroke: rgb($primary);
+                        stroke-miterlimit: 10;
+                        stroke-width: 0.5px;
+                    }
+                }
+
+
+            }
+
+            .card-bottom {
+                .desc {
+                    color: rgb($light-gray);
+                    font-size: 1rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    min-height: 4rem;
+                }
+            }
+
+        }
+
+        .category-col {
+            &:nth-child(3n + 2) {
+                .card-top {
+                    background-color: rgb($light-gray);
+
+                    svg {
+                        transform: scaleY(-1);
+                        bottom: unset;
+                        top: -1.25rem;
+
+                        .half-circle-path {
+                            stroke: rgb($light-gray);
+                        }
+                    }
+                }
+
+            }
+
+            &:nth-child(3n) {
+                .card-top {
+                    background-color: rgb($secondary);
+
+                    svg {
+                        .half-circle-path {
+                            stroke: rgb($secondary);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}

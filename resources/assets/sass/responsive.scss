@@ -1,0 +1,28 @@
+@media (min-width: 992px) {
+  
+    .contact-wrapper {
+      .social-icons {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+      }
+
+      .contact-info {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+      }
+    }
+  
+
+  .full-content-wrapper {
+    .about-section {
+      .about-section-content {
+        padding: 3rem 0;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}

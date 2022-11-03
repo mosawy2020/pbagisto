@@ -1,0 +1,141 @@
+
+
+
+// Body
+$body-bg: #f5f8fa;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$theme-url:'~/themes/pura_theme/assets/';
+$col-3: calc(100% / 3);
+$main-font: 'IBM Plex Sans Arabic' ,sans-serif;
+$expo-font: 'Expo Arabic' ,sans-serif;
+
+
+/*----------Colors ---------*/
+:root{
+    --primary:77, 35, 121;
+    --dark-primary: 54, 24, 84;
+    --secondary: 232, 60, 123;
+    --danger: 231, 0, 76;
+    --danger-light: 213, 39, 79;
+    --light-gray:143, 160, 163;
+    --lighter-gray:147, 153, 145;
+    --yellow: 255 , 224 , 0;
+    --white: 255, 255, 255;
+}
+$danger: var(--danger);
+$danger-lighter:var(--danger-light);
+$primary: var(--primary);
+$dark-primary: var(--dark-primary);
+$primary-opacity : var(--primary-opacity);
+$secondary:var(--secondary);
+$light-gray: var(--light-gray);
+$lighter-gray: var(--lighter-gray);
+$yellow: var(--yellow);
+$white:var(--white);
+$success: #3dae2b;
+
+
+
+
+/*-----------fonts------*/
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Bold.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Bold.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-ExtraLight.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-ExtraLight.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Light.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Light.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Medium.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Medium.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Regular.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Regular.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-SemiBold.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-SemiBold.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/IBMPlexSansArabic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Arabic';
+    src: url('#{$theme-url}fonts/font-text/ExpoArabic-Book.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/ExpoArabic-Book.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/ExpoArabic-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Arabic';
+    src: url('#{$theme-url}fonts/font-text/ExpoArabic-Bold.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/ExpoArabic-Bold.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/ExpoArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Expo Arabic';
+    src: url('#{$theme-url}fonts/font-text/ExpoArabic-Light.woff2') format('woff2'),
+        url('#{$theme-url}fonts/font-text/ExpoArabic-Light.woff') format('woff'),
+        url('#{$theme-url}fonts/font-text/ExpoArabic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
